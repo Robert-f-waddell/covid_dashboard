@@ -1,0 +1,11 @@
+*.csv
+
+*.ipynb
+
+ideal_app\.py
+
+\.idea/
+
+*.ttf
+
+*.otf

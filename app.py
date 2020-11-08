@@ -1,4 +1,5 @@
 import dash
+import pandas as pd
 covid_df = pd.read_csv("https://covid.ourworldindata.org/data/owid-covid-data.csv")
 covid_df = covid_df[["iso_code",
                     "continent",

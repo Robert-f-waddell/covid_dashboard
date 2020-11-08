@@ -32,8 +32,8 @@ layout = html.Div(
                     html.Div(className='eight columns div-for-charts bg-grey',
                              children=[
                                   dcc.Loading(id = "loading-icon", 
-                                            children=[html.Div(dcc.Graph(id='graph-with-slider'))], type="default"),
-                                  dcc.Slider(
+                                            children=[html.Div(dcc.Graph(id='graph-with-slider')),
+                                                     dcc.Slider(
                                         id='year-slider',
                                         min=1,
                                         max=len(monthsdict),
@@ -41,7 +41,16 @@ layout = html.Div(
                                         step=None,
                                         marks = monthsdict
                                         
-                                    )
+                                    )], type="default")
+#                                   dcc.Slider(
+#                                         id='year-slider',
+#                                         min=1,
+#                                         max=len(monthsdict),
+#                                         value=3,
+#                                         step=None,
+#                                         marks = monthsdict
+                                        
+#                                     )
                                     
                              ])
                               ])

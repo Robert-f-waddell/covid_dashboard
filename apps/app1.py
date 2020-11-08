@@ -8,7 +8,7 @@ from dash.dependencies import Input, Output
 from plotly.subplots import make_subplots
 import plotly.graph_objects as go
 
-from app import app, covid_df1
+from app import app, covid_df1, covid_df
 
 months = covid_df.m_date.unique()
 months.sort()
